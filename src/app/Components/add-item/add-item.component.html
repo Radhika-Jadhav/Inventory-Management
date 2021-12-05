@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="jumbotron text-center p-5">
+        <h1>Add Item</h1>  
+      </div>
+
+      <!-- start of success alert box  -->
+      <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> Item added successfully.
+        <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!-- End of success alert box  -->
+
+    <form [formGroup]="AddItemForm" (ngSubmit)="addItem()">
+        <div class="mb-3 form-group">
+          <label for="exampleInputEmail1" class="form-label">Item Name</label>
+          <input type="text" class="form-control" placeholder="Enter Item Name..." formControlName="name">
+        </div>
+
+        <div class="mb-3 form-group">
+            <label for="exampleInputEmail1" class="form-label">Item Discription</label>
+            <input type="text" class="form-control"  placeholder="Enter Item Discription..." formControlName="discription">
+          </div>
+
+        <div class="row mb-3 form-group">
+            <div class="col-6">
+                <label for="exampleInputEmail1" class="form-label">Item Quantity</label>
+                <input type="number" class="form-control" formControlName="quantity">
+            </div>
+
+            <div class="col-6">
+                <label for="exampleInputEmail1" class="form-label">Item Price</label>
+                <input type="number" class="form-control" formControlName="price">
+            </div>
+            
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

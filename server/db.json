@@ -1,9 +1,25 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "invetoryCollection": [
+    {
+      "id": 1,
+      "name": "item 1",
+      "price": 100,
+      "quantity": 2,
+      "discription": "Lorem Ipsum"
+    },
+    {
+      "id": 2,
+      "name": "item 2",
+      "price": 50,
+      "quantity": 1,
+      "discription": "Lorem Ipsum lorem "
+    },
+    {
+      "name": "item 3",
+      "discription": "Lorem ipsum lorem",
+      "quantity": 8,
+      "price": 1000,
+      "id": 3
+    }
+  ]
 }

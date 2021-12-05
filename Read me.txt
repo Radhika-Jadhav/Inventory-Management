@@ -1,0 +1,32 @@
+In this Project I am using local server to store data, fetch data, for that before running project you have to start the server 
+with following steps : 
+
+1) Go inside server folder and type the command in gitbash / cmd prompt. This command will start json server
+json-server --watch db.json
+
+2) You can run the project by 
+ng serve
+
+________________________________________________________________________________________________________________________________________
+
+Hoe to setup Json Server ?
+
+i) Create json server
+Website Link : https://www.npmjs.com/package/json-server
+Command : npm i json-server
+
+ii) Install json server globally
+command : npm install -g json-server
+
+iii) Create a db.json file
+Command : touch db.json
+
+iv) Start JSON Server
+Command : json-server --watch db.json
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Bootstrap Set up 
+1) Install bootstrap : npm install --save bootstrap
+2) Import inside angular.json file : "./node_modules/bootstrap/dist/css/bootstrap.min.css" inside "styles": []
+
